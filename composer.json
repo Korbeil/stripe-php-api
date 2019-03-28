@@ -1,0 +1,36 @@
+{
+    "name": "korbeil/stripe-php-api",
+    "description": "A generated Stripe PHP API",
+    "keywords": ["stripe", "api", "client", "openapi", "swagger", "sdk"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baptiste Leduc",
+            "email": "baptiste.leduc@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Stripe\\": "src/",
+            "Stripe\\Api\\": "generated/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stripe\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "jane-php/open-api-runtime": "^4.2",
+        "php-http/client-common": "^2.0",
+        "php-http/client-implementation": "*"
+    },
+    "require-dev": {
+        "jane-php/open-api": "^4.2",
+        "zendframework/zend-diactoros": "^2.1",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpunit/phpunit": "^8.0"
+    }
+}

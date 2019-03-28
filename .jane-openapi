@@ -1,0 +1,8 @@
+<?php
+
+return [
+    'openapi-file' => __DIR__ . '/specification/openapi/spec2.yaml',
+    'namespace' => 'Stripe\Api',
+    'directory' => __DIR__ . '/generated',
+    'reference' => true,
+];
